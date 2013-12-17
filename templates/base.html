@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel='stylesheet' href='{% static 'css/reset.css' %}'/>
+        <link rel='stylesheet' href='{% static 'css/960_12_col.css' %}'/>
+        <link rel='stylesheet' href='{% static 'css/text.css' %}'/>
+        <link rel='stylesheet' href='{% static 'css/style.css' %}'/>
+    </head>
+
+    <body>
+
+       <!--Header area, menu and search-->
+
+        <header class='container_12'>
+            <h1><a href='home'>ABBA TRANSPORTATION</a></h1>
+
+            <address id='address'>
+                Tel.: 718-123-1234<br>
+                Fax.: 718-123-1234<br>
+                <a href='mailto:email@email.com'>email@email.com</a><br>
+            </address>
+
+            <nav class='grid_8'>
+                <ul>
+                    <li>
+                        <a href='/home/'>home</a>
+                    </li>
+                    <li>
+                        <a href='/guide/'>guide</a>
+                    </li>
+                    <li>
+                        <a href='/contact/'>contact</a>
+                    </li>
+                    <li>
+                        <a href='/about/'>about</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form action='search' method='get' class='grid_4'>
+                <p>
+                    Search: <input type='text' name='search' value='' id='search' size='30' placeholder='Search' />
+                    <button>Search</button>
+                </p>
+            </form>
+        </header>
+
+        <!-- main section -->
+
+        <div id='main' class='container_12'>
+
+        <!-- side bar -->
+
+            <aside class='grid_3'>
+                <h2>Services</h2>
+                <hr>
+                <ul>
+                    <li>
+                        <a href='shl_permit'>shl permit</a>
+                    </li>
+                    <li>
+                        <a href='base_affiliation'>base affiliation</a>
+                    </li>
+                    <li>
+                        <a href='wheelchair_grant'>WAV grant</a>
+                    </li>
+                    <li>
+                        <a href='whellchair_course'>wheelchair course</a>
+                    </li>
+                    <li>
+                        <a href='car_financing'>car financing</a>
+                    </li>
+                    <li>
+                        <a href='tlc_insurance'>tlc aproved insurance</a>
+                    </li>
+                    <li>
+                        <a href='plate_letter'>plate letter appointment</a>
+                    </li>
+                    <li>
+                        <a href='visual_inspection'>visual inspection appointment</a>
+                    </li>
+                    <li>
+                        <a href='hack_up'>hack up services</a>
+                    </li>
+                    <li>
+                        <a href='vehicle_for_lease'>vehicle for lease</a>
+                    </li>
+                    <li>
+                        <a href='vehicle_for_rent'>vehicle for rent</a>
+                    </li>
+                    <li>
+                        <a href='other_service'>other services</a>
+                    </li>
+                </ul>
+            </aside>
+
+        <!-- main area -->
+
+            <div id='primary' class='grid_8 prefix_1'>
+                {% block content %}
+                {% endblock %}
+            </div>
+
+        </div>
+
+        <!-- footer -->
+
+        <div id='footer_wrap'>
+            <footer class='container_12'>
+                <h3>ABBA Transportation</h3>
+                <p>2315 w 15 st brooklyn ny 11235 | tel.: 718-123-1234 | fax.: 718-123-1234</p>
+            </footer>
+
+            <div id='credits' class='container_12'>
+                <p>andrey zalomskiy</p>
+            </div>
+        </div>
+
+    </body>
+</html>

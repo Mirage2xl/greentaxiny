@@ -1,0 +1,260 @@
+/***************
+---full page----
+***************/
+
+body {
+    background: #cce3ad url(../images/header_bg.jpg) repeat-x;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-size: 12px;
+    line-height: 18px;
+    font-size: Verdana, helvetica, arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+ul {
+    overflow: hidden;
+}
+
+li {
+    margin-left: 0;
+    list-style: none;
+}
+
+.container_12 {
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+}
+
+/***************
+-----header-----
+***************/
+
+header {
+    overflow: hidden;
+}
+
+header h1 {
+    padding-top: 30px;
+    text-shadow: 0 1px 0 #446b16;
+    font-size: 30px;
+}
+
+header h1 a {
+    font-weight: bold;
+}
+
+/***************
+------nav-------
+***************/
+
+header nav {
+    overflow: hidden;
+    float: left;
+    margin-top: 5px;
+    height: 50px;
+    line-height: 50px;
+}
+
+header nav li {
+    float: left;
+    margin-right: 40px;
+}
+
+header nav a {
+    color: white;
+    font-size:  16px;
+    text-shadow: 0 1px 0 #cce3ad;
+    padding: 5px;
+}
+
+header nav a:hover {
+    background: #62a019;
+    color: black;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #446b16;
+    margin-right: -2px;
+    text-shadow: 0 1px 0 #446b16;
+    transition: background .5s;
+}
+
+/**************
+----address----
+**************/
+
+#address {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 20px 0;
+    text-align: right;
+}
+
+#address a {
+    color: blue;
+}
+
+/***************
+-----search-----
+***************/
+
+header form {
+    float: right;
+    margin-top: 15px;
+    display: inline;
+}
+
+header input {
+    background: #cce3ad;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+header button {
+    border: none;
+    color: black;
+    font-weight: bold;
+    background: #cce3ad;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+header button:hover {
+    color: white;
+    background: #abe060;
+}
+
+/***************
+---background---
+***************/
+
+#main {
+    background: linear-gradient(left, #cce3ad, #abe060 25%, #cce3ad 25%, #cce3ad);
+    background: -webkit-gradient(linear, left top, right top, from(#cce3ad),
+                                 color-stop(25%, #abe060), color-stop(25%, #cce3ad), to(#cce3ad));
+    background: -moz-linear-gradient(left, #cce3ad, #abe060 25%, #cce3ad 25%, #cce3ad);
+    overflow: hidden;
+    margin-top: -10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+/***************
+---side bar-----
+***************/
+
+aside h2 {
+    text-align: center;
+}
+
+aside li a {
+    display: block;
+    padding-left: 2px;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+aside li a:hover {
+    background: linear-gradient(left, #62a019, #abe060);
+    background: -webkit-gradient(linear, left top, right top, from(#62a019), to(#abe060));
+    background: -moz-linear-gradient(left, #62a019, #abe060);
+}
+
+/****************
+-----footer------
+****************/
+
+#footer_wrap {
+    background: url(../images/footer_bg.jpg) repeat-x;
+    margin-bottom: 0px;
+}
+
+footer {
+    text-align: center;
+    height: 80px;
+}
+
+footer h3 {
+    font-size: 26px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 0 1px 0 #446b16;
+}
+
+#credits p {
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+/******************
+----other pages----
+******************/
+
+/*****************
+---contact page---
+*****************/
+
+#contact h2, h4, p {
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 16px;
+}
+
+#contact a {
+    color: blue;
+}
+
+#contact #id_name, #id_email, #id_message {
+    width: 400px;
+    max-width: 400px;
+}
+
+#contact form {
+    text-align: center;
+}
+
+#contact table {
+    margin: auto;
+}
+
+#contact form th {
+    text-align: right;
+    padding-right: 5px;
+}
+
+#contact button {
+    border: none;
+    color: black;
+    font-weight: bold;
+    background: #abe060;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#contact button:hover {
+    color: white;
+    background: black;
+}
+
+/********************
+--------about--------
+********************/

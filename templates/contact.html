@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact us{% endblock %}
+
+{% block content %}
+    <div id='contact'>
+        <h2>You can contact us:</h2>
+        <hr>
+        <h4>ABBA Transportation</h4>
+        <p>2315 w 15 st</p>
+        <p>Brooklyn, NY 11235</p>
+        <p>Tel: 718-123-1234</p>
+        <p>Fax: 718-123-1234</p>
+        <p>E-mail: <a href='mailto:greentaxiny@gmail.com'>greentaxiny@gmail.com</a></p>
+        <br>
+        <p>or send us message</p>
+        <form action='/contact/' method='post'>
+            <table>
+                {{ form.as_table }}
+            </table>
+            {% csrf_token %}
+            <button> Submit! </button>
+        </form>
+    </div>
+{% endblock %}
